@@ -1,0 +1,56 @@
+#!/usr/bin/bash
+#//Hanya tools gabungan yang cupu//
+#//Script Kiddies//
+kiddies='\e[1;31m'
+kiddes='\e[1;33m'
+clear
+echo ""
+echo -e $kiddes "########################"
+echo "  # TOOLS CHECKER BY STUCK_CREW # " | lolcat
+echo -e $kiddes "########################"
+echo -e $kiddies"============================================================" 
+echo " [1] CHECKER AGODA"  | lolcat
+echo " [2] CHECKER BOOK MY SHOW" | lolcat
+echo " [3] CHECKER MY INDIHOME" | lolcat
+echo " [4] CHECKER FACEBOOK" | lolcat
+echo " [5] CHECKER SBUX" | lolcat
+echo " [0] MEMILIH UNTUK KELUAR SAJA" | lolcat
+echo -e $kiddies"============================================================"
+read -p " [Pilih No]> " File;
+
+if [ $File = 1 ] || [ $File = 01 ]
+then
+echo "============================================================"
+bash checkeragoda.sh;
+fi
+
+if [ $File = 2 ] || [ $File = 02 ]
+then
+echo "============================================================"
+bash bookmyshowchecker.sh mailistbms.txt;
+fi
+
+if [ $File = 3 ] || [ $File = 03 ]
+then
+echo "============================================================"
+bash MyIndihome.sh;
+fi
+
+if [ $File = 4 ] || [ $File = 04 ]
+then
+echo "============================================================"
+bash facebook.sh mailistfacebook.txt;
+fi
+
+if [ $File = 5 ] || [ $File = 05 ]
+then
+echo "============================================================"
+bash sbux.sh;
+fi
+
+if [ $File = 0 ] || [ $File = 00 ]
+then
+echo "============================================================"
+echo "©SGB TEAM #54N63X"
+sleep 3
+fi
